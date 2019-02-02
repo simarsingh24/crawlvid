@@ -10,8 +10,6 @@ def truncateUTF8length(unicodeStr, maxsize):
 
 
 def lambda_handler(event, context):
-    ACCESS_KEY_ID = 'AKIAIP7E6DYJUA6FZXEQ'
-    ACCESS_SECRET_KEY = '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'
     BUCKET_NAME = 'seektube'
     
     s3 = boto3.client("s3",aws_access_key_id=ACCESS_KEY_ID,aws_secret_access_key=ACCESS_SECRET_KEY)
